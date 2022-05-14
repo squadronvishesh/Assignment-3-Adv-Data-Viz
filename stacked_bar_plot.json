@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 300,
+  "data": {"url": "City_Owned_Trees.csv"},
+  "title": "Cond versus Side -- Stacked Bar Plot",
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "COND"},
+    "y": {"field": "SIDE", "type": "nominal"},
+    "color": {"field": "SIDE", "type": "nominal"}
+  }
+}
+

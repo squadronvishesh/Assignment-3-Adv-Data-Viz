@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 300,
+  "data": {"url": "City_Owned_Trees.csv"},
+  "title": "Tree Type Bar Plot based on a condition",
+  "mark":"bar",
+  "encoding": {
+    "x": {"aggregate":"count", "field": "GROW", "type": "quantitative", "title": "Count"},
+    "y": {"field": "TREE-TYPE"},
+    "color": {"field": "COND", "type": "nominal"}   
+}
+}

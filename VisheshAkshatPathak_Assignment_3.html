@@ -1,0 +1,60 @@
+<html>
+<head>
+<title> Assignment 3 - Vishesh Akshat Pathak</title>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+<script src="https://d3js.org/d3.v6.js"></script>
+
+</head>
+
+<body>
+    <h2 style="text-align: center;">Vishesh Akshat Pathak Assignment 3 Visulizations</h2>
+
+<!-- <div id="my_d3_viz"></div>
+<script type="text/javascript">
+
+d3.csv("City_Owned_Trees.csv", function(data) {
+    console.log(data);
+});
+ 
+</script> -->
+<div id="vis" style="margin-left: 100px;"></div>
+<script>
+    vegaEmbed('#vis', "Scatter_Plot_Side.json");
+</script>
+
+<div id="condition"></div>
+<script>
+    vegaEmbed('#condition', "condition.json");
+</script>
+
+<div id="grow"></div>
+<script>
+    vegaEmbed('#grow', "DBH_Count.json");
+</script>
+
+<div id="stackedPlot"></div>
+<script>
+    vegaEmbed('#stackedPlot', "stacked_bar_plot.json");
+</script>
+
+<div id="brush"></div>
+<script>
+    vegaEmbed('#brush', "brush.json");
+</script>
+
+<div id="treetype"></div>
+<script>
+    vegaEmbed('#treetype', "treetype.json");
+</script>
+
+<div id="chart"></div>
+<script>
+    vegaEmbed('#chart', "chart.json");
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 450,
+  "height": 250,
+  "data": {"url": "City_Owned_Trees.csv"},
+  "title": "MT Chart Plotting",
+  "mark": {"type": "arc", "innerRadius": 50},
+  "encoding": {
+    "theta": {"field": "Mt"},
+    "color": {"field": "Condition"}
+  }
+}

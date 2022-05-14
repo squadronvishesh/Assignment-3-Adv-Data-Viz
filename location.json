@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 300,
+  "data": {"url": "City_Owned_Trees.csv"},
+  "projection": {
+    "type": "albersUsa"
+  },
+  "mark": "circle",
+  "encoding": {
+    "longitude": {
+      "field": "Y",
+      "type": "quantitative"
+    },
+    "latitude": {
+      "field": "X",
+      "type": "quantitative"
+    },
+    "size": {"value": 10}
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}
